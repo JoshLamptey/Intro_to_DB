@@ -1,4 +1,6 @@
-#creating the book database
+#creating the library database
+
+CREATE DATABASE IF NOT EXISTS alx_book_store
 
 CREATE TABLE Books(
     book_id(Primary Key) NOT NULL,
