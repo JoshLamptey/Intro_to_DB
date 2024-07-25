@@ -3,7 +3,7 @@
 CREATE DATABASE IF NOT EXISTS alx_book_store;
     
 CREATE TABLE Books(
-    book_id INT AUTO_INCREMENT Primary Key ,
+    book_id INT AUTO_INCREMENT PRIMARY KEY ,
     title VARCHAR(130) NOT NULL,
     author_id INT,
     price DOUBLE NOT NULL,
