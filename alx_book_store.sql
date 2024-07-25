@@ -1,17 +1,17 @@
 #creating the library database
 
-CREATE DATABASE IF NOT EXISTS alx_book_store
-
+CREATE DATABASE IF NOT EXISTS alx_book_store;
+    
 CREATE TABLE Books(
-    book_id(Primary Key) NOT NULL,
+    book_id INT AUTO_INCREMENT Primary Key ,
     title VARCHAR(130) NOT NULL,
     author_id FOREIGN KEY REFERENCES Authors(author_id) NOT NULL,
-    price DOUBLE PRECISON,
+    price DOUBLE NOT NULL,
     publication_date DATE
 )
 
 CREATE TABLE Authors(
-    author_id(Primary Key) NOT NULL,
+    author_id INT AUTO_INCREMENT Primary Key ,
     author_name VARCHAR(215)
 )
 CREATE TABLE Customers(
