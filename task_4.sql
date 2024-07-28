@@ -6,7 +6,7 @@ SELECT COLUMN_NAME,
     COLUMN_KEY,
     COLUMN_DEFAULT,
     EXTRA
-    FROM
-       INFORMATION_SCHEMA.COULMNS
-    WHERE
-        TABLE_SCHEMA = 'alx_book_store' AND TABLE_NAME = 'Books'          
+FROM
+    INFORMATION_SCHEMA.COLUMNS
+WHERE
+    TABLE_SCHEMA = 'alx_book_store' AND TABLE_NAME = 'Books';
